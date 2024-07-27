@@ -1,10 +1,74 @@
-body{
-   margin: 0;
-    padding-inline: 1rem;
-    min-height: 100vh;
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     font-family: 'Inter', sans-serif;
-    background-color: hsl(0, 0%, 8%);
+    background-color: hsl(30, 18%, 87%);
+}
+
+.card {
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 25rem;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.profile-image {
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: hsl(230, 15%, 15%);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: hsl(230, 15%, 15%);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+td {
+    padding: 0.5rem;
+    border-bottom: 1px solid hsl(230, 15%, 90%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
