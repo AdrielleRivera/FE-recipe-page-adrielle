@@ -1,64 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Recipe page</title>
-</head>
-<body>
-  <main class="card">
-    <img src="images/image-omelette.jpeg" alt="a picture about an omelette egg with tomato and green veggies that looks yummy to eat and easy to cook!" class="profile-image">
-    <h1 class="title">Simple Omelette Recipe</h1>
-    <p class="first-sentence">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-    <h2 class="prep-time">Preparation time</h2>
-    <ul class="UL-1">
-      <li>Total: Approximately 10 minutes</li>
-      <li>Preparation: 5 minutes</li>
-      <li>Cooking: 5 minutes</li>
-    </ul>
-    <h3>Ingredients</h3>
-    <ul >
-      <li>2-3 large eggs</li>
-      <li>Salt, to taste</li>
-      <li>Pepper, to taste</li>
-      <li>1 tablespoon of butter or oil</li>
-      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-    </ul>
-    <h3>Instructions</h3>
-    <ol>
-      <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
-      <li><strong>Heat the pan:</strong>Place a non-stick frying pan over medium heat and add butter or oil.</li>
-      <li><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
-      <li><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
-      <li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
-      <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
-    </ol>
-    <h3>Nutrition</h3>
-    <p class="last-paragraph">The table below shows nutritional values per serving without the additional fillings.</p>
-    <table class="table-text">
-      <tr>
-        <td>Calories</td>
-        <td class="table-number">277kcal</td>
-      </tr>
-      <tr>
-        <td>Carbs</td>
-        <td class="table-number">0g</td>
-      </tr>
-      <tr>
-        <td>Protein</td>
-        <td class="table-number">20g</td>
-      </tr>
-      <tr>
-        <td>Fat</td>
-        <td class="table-number">22g</td>
-      </tr>
-    </table>
-  </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.linkedin.com/in/adrielle-rivera-355ab3290/">Adrielle Rivera</a>.
-  </div>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(30, 18%, 87%);
+}
+.card {
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 40rem;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-image {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    margin-left: auto;/*ito yung nag papa center*/
+    margin-right: auto;
+    
+}
+
+.title {
+    font-size: 2rem;
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 1rem;
+    margin-right: 20px;
+    font-weight: 600;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.first-sentence{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: justify;
+}
+.prep-time{
+    color: hsl(332, 51%, 32%);
+    font-size: large;
+    font-weight:700;
+    margin-left:20px;
+}
+
+.UL-1
+{
+    margin-left: 26px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: hsl(14, 45%, 36%);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 450;
+    font-family: "Young Serif", serif;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0 1rem;
+    margin-left: 10px; 
+    margin-bottom: 1rem;
+    font-family: "Outfit", sans-serif;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.last-paragraph{
+    font-family: "Outfit", sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table-text{
+    font-family: "Outfit", sans-serif;
+}
+
+td {
+    padding: 0.5rem;
+    border-bottom: 1px solid hsl(230, 15%, 90%);
+}
+
+.table-number{
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
