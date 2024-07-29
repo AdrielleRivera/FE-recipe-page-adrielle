@@ -56,7 +56,9 @@ body {
 }
 
 .UL-1
-{margin-left: 26px;}
+{
+    margin-left: 26px;
+}
 
 h2 {
     font-size: 1.5rem;
@@ -70,11 +72,17 @@ h2 {
 ul, ol {
     margin: 0;
     padding: 0 1rem;
+    margin-left: 10px; 
     margin-bottom: 1rem;
+    font-family: "Outfit", sans-serif;
 }
 
 li {
     margin-bottom: 0.5rem;
+}
+
+.last-paragraph{
+    font-family: "Outfit", sans-serif;
 }
 
 table {
@@ -83,9 +91,18 @@ table {
     margin-top: 1rem;
 }
 
+.table-text{
+    font-family: "Outfit", sans-serif;
+}
+
 td {
     padding: 0.5rem;
     border-bottom: 1px solid hsl(230, 15%, 90%);
+}
+
+.table-number{
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
 }
 
 .attribution {
