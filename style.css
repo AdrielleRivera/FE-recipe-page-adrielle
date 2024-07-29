@@ -12,7 +12,7 @@ body {
 .card {
     background: hsl(0, 0%, 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 40rem;
+    width: 40rem;
     padding: 2rem;
     border-radius: 15px;
     display: flex;
@@ -50,6 +50,7 @@ body {
 }
 .prep-time{
     color: hsl(332, 51%, 32%);
+    font-size: large;
     font-weight:700;
     margin-left:20px;
 }
@@ -59,7 +60,7 @@ body {
     margin-left: 26px;
 }
 
-h2 {
+h3 {
     font-size: 1.5rem;
     color: hsl(14, 45%, 36%);
     margin-top: 1rem;
@@ -85,7 +86,7 @@ li {
 }
 
 table {
-    max-width: 100%;
+    width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
 }
