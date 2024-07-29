@@ -9,11 +9,10 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: hsl(30, 18%, 87%);
 }
-    
 .card {
     background: hsl(0, 0%, 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 40rem;
+    max-width: 40rem;
     padding: 2rem;
     border-radius: 15px;
     display: flex;
@@ -86,7 +85,7 @@ li {
 }
 
 table {
-    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
 }
