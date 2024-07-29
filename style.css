@@ -10,6 +10,9 @@ body {
     background-color: hsl(30, 18%, 87%);
 }
 
+footer{
+    align-items: center;
+    
 .card {
     background: hsl(0, 0%, 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
