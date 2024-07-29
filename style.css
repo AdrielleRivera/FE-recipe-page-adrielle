@@ -48,16 +48,23 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     text-align: justify;
-    
+}
+.prep-time{
+    color: hsl(332, 51%, 32%);
+    font-weight:700;
+    margin-left:20px;
 }
 
+.UL-1
+{margin-left: 26px;}
 
 h2 {
     font-size: 1.5rem;
-    color: hsl(230, 15%, 15%);
+    color: hsl(14, 45%, 36%);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    font-weight: 600;
+    font-weight: 450;
+    font-family: "Young Serif", serif;
 }
 
 ul, ol {
